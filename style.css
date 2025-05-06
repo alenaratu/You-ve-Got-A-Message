@@ -84,7 +84,7 @@ body {
       padding: 20px;
     }
     .envelope {
-      width: 120px;
+      width: 80%; /* Adjust width to a percentage for better responsiveness */
+      max-width: 200px; /* Set a reasonable max-width for small screens */
     }
   }
-  
