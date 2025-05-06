@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Message from Alena</title>
+  <link rel="icon" type="image/png" href="FAVICONA-removebg-preview.png">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <img src="Happy Graduation BG.png" alt="Background" class="background" />
+    <img src="ENVELOPE__3_-removebg-preview.png" alt="Envelope" class="envelope" onclick="revealPassword()" />
+    <div id="passwordBox" class="hidden">
+      <input type="password" id="passwordInput" placeholder="Enter your password" />
+      <button onclick="showMessage()">Open</button>
+    </div>
+    <div id="message" class="message hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+<audio id="bg-music" loop>
+    <source src="Beabadoobee - the perfect pair (Instrumental).mp3" type="audio/mpeg">
+  </audio>
+<script>
+    const bgMusic = document.getElementById('bg-music');
+    bgMusic.volume = 0.1; // Set volume to 10%
+    bgMusic.play();
+</html>
